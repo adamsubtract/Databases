@@ -17,7 +17,7 @@ SQL is a declarative language and not a procedural language.
 
 ### 4. In your own words, explain how the pieces of a database system fit together at a high level.
 
-
+The pieces (rows, tables, columns) are easy to connect to each other and are easily readable.
 
 ### 5. Explain the meaning of table, row, column, and value.
 
