@@ -15,7 +15,7 @@ Display the name, gender, and age of all dogs that are part Labrador.
 
 SELECT name, gender, age
 FROM dogs
-WHERE breed LIKE '%Labrador%';
+WHERE breed = 'Labrador';
 
 Display the ids of all dogs that are under 1 year old.
 
@@ -23,11 +23,11 @@ SELECT id
 FROM dogs
 WHERE age < 1;
 
-Display the name and age of all dogs that are female and over 35lbs.
+Display the name and age of all dogs that are female and over 35bs.
 
 SELECT name
 FROM dogs
-WHERE gender='female' AND weight > 351;
+WHERE gender='F' AND weight > 35;
 
 Display all of the information about all dogs that are not Shepherd mixes.
 
@@ -71,9 +71,9 @@ FROM cats
 
 Display the name and sex of all cats who are 7 years old.
 
-SELECT name, sex
+SELECT name, gender
 FROM cats
-WHERE age > 7;
+WHERE age = 7;
 
 Find all of the names of the cats, so you don’t choose duplicate names for new cats.
 
@@ -82,19 +82,19 @@ FROM cats
 
 ### List each comparison operator and explain when you would use it. Include a real world example for each.
 
-> greater than - used to compare values and find largest. 9 apples > 8 apples.
+`>` greater than - used to compare values and find largest. 9 apples > 8 apples.
 
-< less than - used to compare values and find smallest. 7 apples < 8 apples.
+`<` less than - used to compare values and find smallest. 7 apples < 8 apples.
 
-= equal to - used to compare values. 3 apples = 3 apples.
+`=` equal to - used to compare values. 3 apples = 3 apples.
 
->= greater than or equal to - used to compare values and find the largest, or one that is equal to the comparison. 9 apples >= 9 apples.
+`>=` greater than or equal to - used to compare values and find the largest, or one that is equal to the comparison. 9 apples >= 9 apples.
 
-<= less than or equal to - used to compare values and find the smallest, or one that is equal to the comparison. 9 apples <= 9 apples.
+`<=` less than or equal to - used to compare values and find the smallest, or one that is equal to the comparison. 9 apples <= 9 apples.
 
-!= not equal to - used to compare values and find out if they are equal to each other. 4 apples != 6 apples.
+`!=` not equal to - used to compare values and find out if they are equal to each other. 4 apples != 6 apples.
 
-<> greater than or less than - used to compare values much like the !=. 1 apple <> 3 apples.
+`<>` greater than or less than - used to compare values much like the !=. 1 apple <> 3 apples.
 
 LIKE used with strings. We can use like along with '%' to find partial matches within strings. 'Dirty Dancing' could be found with LIKE '%Dirty%'.
 
